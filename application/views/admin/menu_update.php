@@ -1,6 +1,6 @@
 <form action="<?= base_url('admin/update_process'); ?>" method="POST">
     <div class="form-group">
-        <input type="text" name="product_id" value=<?= $product_id ?> readOnly>
+        <input type="hidden" name="product_id" value=<?= $product_id ?> readOnly>
     </div>
     <div class="form-group">
         <label for="name" class="col-form-label">Name:</label>
