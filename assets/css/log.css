@@ -1,0 +1,79 @@
+.content {
+    height: 87vh;
+}
+
+.con {
+    margin: 30vh 0;
+}
+
+.con h3 {
+    text-align: right;
+    color: #fff;
+    margin-right: 8vh;
+    letter-spacing: 0.25em;
+}
+
+.con .bold {
+    font-weight: bold;
+}
+
+.con hr {
+    border-color: #fff;
+    width: 500px;
+    padding: 2vh 0;
+}
+
+.con a {
+    text-decoration: none;
+}
+
+.pic {
+    background-image: url(../img/pic-login.png);
+    background-size: cover;
+}
+
+.con .title {
+    background-color: rgba(30, 30, 30, 0.7);
+    text-align: center;
+    width: 20vw;
+    height: 15vh;
+    padding: 4vh;
+    color: #fff;
+    margin-left: 13vw;
+}
+
+.con .title:hover {
+    background-color: rgba(52, 52, 52, 0.7);
+}
+
+.title p {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.title h4 {
+    letter-spacing: 0.2em;
+}
+
+.input {
+    margin: 2vh 0;
+}
+
+.input h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    padding: 1vh;
+}
+
+.link {
+    display: flex;
+    margin-top: 30vh;
+}
+
+.form-group {
+    margin: 5vh 0;
+}
+
+.link .small {
+    padding: 2vh;
+}

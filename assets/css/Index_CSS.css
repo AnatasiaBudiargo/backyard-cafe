@@ -1,0 +1,721 @@
+/* NAVBAR */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.jumbotron {
+    background-color: beige;
+}
+
+.navbar {
+    background-color: #18191e;
+}
+
+.navbar ul li {
+    margin: 0 1vw;
+}
+
+.navbar ul li a {
+    font-size: 12px;
+    color: #d1d1d1;
+}
+
+.navbar-toggler {
+    border-color: #d1d1d1;
+}
+
+.navbar-toggler-icon {
+    border-top: 5px solid #d1d1d1;
+    border-bottom: 5px solid #d1d1d1;
+}
+
+.nav-link {
+    margin-right: 20px;
+}
+
+.nav-item {
+    font-family: "Lato", sans-serif;
+}
+
+.nav-item .book {
+    color: #519c15;
+}
+
+
+/* AKHIR NAVBAR */
+
+
+/* JUMBOTRON */
+
+.jumbotron {
+    background-image: url(../img/jumbotron-image.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: -8px 0;
+    height: 600px;
+    text-align: center;
+    position: relative;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+.jumbotron.show {
+    opacity: 1;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.container .logo {
+    width: 25%;
+    background-color: #f3f3f3;
+    padding: 20px;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.logo .title {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 7px;
+    font-size: 16px;
+}
+
+.logo .title2 {
+    font-size: 10px;
+    color: #505050;
+    opacity: 0.5;
+    font-size: 8px;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 50px;
+    /* buat tulisan di tengah2 (kira2) */
+    font-weight: 200;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+    font-size: 40px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+.jumbotron p {
+    padding-top: 8px;
+    color: #d1d1d1;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.sosmed {
+    margin-left: 38%;
+}
+
+.sosmed img {
+    height: 28px;
+    border-radius: 5px;
+    margin-left: -25px;
+}
+
+
+/* AKHIR JUMBOTRON */
+
+
+/* CONTENT */
+
+section {
+    margin-top: 50px;
+}
+
+
+/* LOCATION */
+
+.location {
+    text-align: center;
+    color: #505050;
+    font-family: "Lato", sans-serif;
+    box-sizing: content-box;
+    opacity: 0;
+    transition: 4s;
+}
+
+.location.show {
+    opacity: 1;
+}
+
+.location img {
+    height: 15px;
+    padding-right: 10px;
+}
+
+.location h6 {
+    color: #505050;
+    opacity: 0.5;
+    padding-top: 15px;
+}
+
+.location a {
+    display: block;
+    background-color: #18191e;
+    display: inline-block;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.location a:hover {
+    background-color: #ddba52;
+}
+
+
+/* AKHIR LOCATION */
+
+
+/* BOOK-AND-EVENT */
+
+.book-and-event {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.book-and-event .js {
+    opacity: 0;
+    transform: translate(-50px 0);
+    transition: 1s;
+}
+
+.book-and-event .js.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.book-and-event h1 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 200;
+    padding-top: 40px;
+    color: #505050;
+    font-weight: bold;
+}
+
+.book-and-event p {
+    margin-top: 20px;
+    font-family: "Lato", sans-serif;
+    color: #505050;
+    font-size: 18px;
+}
+
+.book-and-event a {
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    padding: 12px 26px;
+    border-radius: 30px;
+    background-color: white;
+    font-weight: bolder;
+    color: #18191e;
+    border: 3px solid #b9e596;
+    margin-bottom: 40px;
+}
+
+.book-and-event a:hover {
+    border-color: #519c15;
+    box-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* AKHIR BOOK-AND CONTENT */
+
+
+/* PHOTO MENU */
+
+.photo-menu {
+    margin-top: 0px;
+}
+
+.photo-menu .card {
+    opacity: 0;
+    transition: 2s;
+}
+
+.photo-menu .card.show {
+    opacity: 1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: 1s;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    text-align: center;
+    padding: 200px;
+}
+
+.overlay:target {
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    width: auto;
+}
+
+.overlay img {
+    height: 100%;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.overlay:target img {
+    animation: ZoomFadeIn 1s;
+}
+
+.overlay a {
+    opacity: 0;
+    overflow: hidden;
+}
+
+.overlay:target a {
+    opacity: 1;
+    margin-top: -150px;
+}
+
+.next,
+.prev {
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.next:hover,
+.prev:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.next {
+    background-image: url(../img/ICON/right.png);
+    top: 60%;
+    right: 20%;
+}
+
+.prev {
+    background-image: url(../img/ICON/left.png);
+    top: 60%;
+    left: 20%;
+}
+
+
+/* AKHIR PHOTO MENU */
+
+
+/* MENU */
+
+.menu {
+    height: 500px;
+    width: 100%;
+    background-image: url(../img/menu.jpeg);
+    background-size: cover;
+    margin-top: 0;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.menu-isi {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 500px;
+}
+
+.menu hr {
+    border-top: 5px solid white;
+}
+
+.menu h1,
+h5 {
+    margin: 15px 0;
+    color: white;
+}
+
+.menu .konten {
+    padding-top: 20%;
+    display: inline-block;
+}
+
+.menu a {
+    margin-top: 50px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    padding: 12px 26px;
+    border-radius: 30px;
+    background-color: white;
+    font-weight: bolder;
+    color: #18191e;
+    margin-bottom: 40px;
+}
+
+.menu a:hover {
+    background-color: #ddba52;
+    color: white;
+}
+
+
+/* AKHIR MENU */
+
+
+/* OUR CHEF */
+
+.our-chef {
+    margin-top: -5px;
+    padding-top: 30px;
+}
+
+.our-chef .title {
+    font-family: "Playfair Display", serif;
+}
+
+.our-chef img {
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 30%;
+    margin-bottom: 30px;
+}
+
+.our-chef .gambar {
+    padding-bottom: 40px;
+}
+
+.our-chef .gmbr {
+    opacity: 0;
+    transition: 1s;
+}
+
+.our-chef .gmbr.show {
+    opacity: 1;
+}
+
+.our-chef .lapisan {
+    opacity: 0;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-left: 28.5%;
+    margin-top: -230px;
+    position: absolute;
+    transition: 0.3s;
+    /* transform: scale(0) rotate(0);
+    opacity: 0; */
+}
+
+.our-chef .konten {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.our-chef .konten img {
+    height: 30px;
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+.our-chef .lapisan:hover {
+    /* transform: scale(1) rotate(360deg); */
+    background-color: rgba(61, 61, 61, 0.9);
+    color: white;
+    opacity: 1;
+}
+
+
+/* .our-chef .konten img:hover {
+    opacity: 1;
+} */
+
+
+/* AKHIR BOOK A TABLE */
+
+
+/* AKHIR CONTENT */
+
+
+/* FOOTER */
+
+footer {
+    background-color: #18191e;
+    color: #f3f3f3;
+    font-family: "Merriweather", serif;
+}
+
+footer p {
+    font-style: italic;
+}
+
+footer h3 {
+    padding-bottom: 5px;
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+hr {
+    border-top: 1px solid #d1d1d1;
+}
+
+.time {
+    text-align: right;
+}
+
+footer .allRights {
+    padding-left: 15px;
+}
+
+footer .menuBawah {
+    display: block;
+}
+
+footer a:hover::after {
+    font-weight: bold;
+}
+
+.sosmed-2 {
+    margin-left: 0%;
+}
+
+.sosmed-2 img {
+    height: 23px;
+    border-radius: 5px;
+    margin-left: -18px;
+}
+
+.menuBawah ul li {
+    display: inline;
+}
+
+.menuBawah ul li a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #f3f3f3;
+}
+
+.menuBawah a:hover {
+    color: #d1d1d1;
+}
+
+
+/* AKHIR FOOTER */
+
+
+/* animasi */
+
+@keyframes Fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ZoomFadeIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* RESPONSIVE */
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .nav-link {
+        margin-right: 35px;
+    }
+    .jumbotron {
+        margin-top: 40px;
+        background-position: 0 -150px;
+    }
+    .container .logo {
+        width: 25%;
+        background-color: #f3f3f3;
+        padding: 20px;
+        margin: auto;
+        margin-top: 3%;
+    }
+    .logo .title {
+        font-family: "Lato", sans-serif;
+        font-size: 20px;
+        letter-spacing: 7px;
+        font-weight: bold;
+    }
+    .logo .title2 {
+        font-size: 10px;
+        color: #505050;
+        opacity: 0.5;
+    }
+    .jumbotron .display-4 {
+        color: white;
+        margin-top: 40px;
+        /* buat tulisan di tengah2 (kira2) */
+        font-weight: 300;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+        font-size: 60px;
+    }
+    .book-and-event {
+        background-color: #f3f3f3;
+        text-align: center;
+    }
+    /* PHOTO MENU */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 9999;
+        transition: 1s;
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        text-align: center;
+        padding: 200px;
+    }
+    .overlay:target {
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        height: auto;
+        width: auto;
+    }
+    .overlay img {
+        height: 100%;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+    }
+    .overlay:target img {
+        animation: ZoomFadeIn 1s;
+    }
+    .overlay a {
+        opacity: 0;
+        overflow: hidden;
+    }
+    .overlay:target a {
+        opacity: 1;
+        margin-top: -150px;
+    }
+    .next,
+    .prev {
+        width: 100px;
+        height: 150px;
+        position: absolute;
+        text-indent: -9999px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .next:hover,
+    .prev:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    .next {
+        background-image: url(../img/ICON/right.png);
+        top: 60%;
+        right: 20%;
+    }
+    .prev {
+        background-image: url(../img/ICON/left.png);
+        top: 60%;
+        left: 20%;
+    }
+    /* AKHIR PHOTO MENU */
+    .sosmed {
+        margin-left: 45%;
+    }
+    .sosmed-2 {
+        margin-left: 0%;
+        margin-top: 12px;
+    }
+    .menu .konten {
+        padding-top: 10%;
+    }
+    .menu h1,
+    h2 {
+        padding: 0;
+    }
+    .menu hr {
+        margin-top: 15%;
+    }
+    .book-a-table a {
+        margin-left: 45%;
+    }
+    .our-chef img {
+        margin-left: 20%;
+        margin-bottom: 30px;
+    }
+    .our-chef .lapisan {
+        margin-left: 18.5%;
+        margin-top: -230px;
+    }
+}
+
+footer {
+    padding-top: 80px;
+}
+
+footer h3 {
+    padding-bottom: 10px;
+}
+
+footer .menuBawah {
+    text-align: right;
+}
+
+footer .atas {
+    margin-bottom: 100px;
+}
+
+.menuBawah ul li {
+    display: inline;
+}
+
+.menuBawah ul li a {
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.footer-bawah {
+    padding: 15px 0;
+}
