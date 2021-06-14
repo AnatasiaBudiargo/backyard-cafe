@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    color: #18191e;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #f1f1f1;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #d1d1d1;
+}
+
+b {
+    font-weight: 600;
+}
+
+.navbar {
+    background-color: #18191e;
+    padding: 12px;
+}
+
+#progressbar {
+    overflow: hidden;
+    padding-left: 0px;
+    margin: 0;
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 16px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+}
+
+#progressbar #step1:before {
+    content: "1";
+    color: #fff;
+}
+
+#progressbar #step2:before {
+    content: "2";
+    color: #fff;
+}
+
+#progressbar #step3:before {
+    content: "3";
+    color: #fff;
+}
+
+#progressbar li:before {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    font-size: 20px;
+    background: #989898;
+    border-radius: 50%;
+    margin: auto;
+    padding: 0px;
+}
+
+#progressbar li:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #18191e;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: -1;
+}
+
+#progressbar li:last-child:after {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: -50%;
+}
+
+#progressbar li:nth-child(2):after {
+    left: -50%;
+}
+
+#progressbar li:first-child:after {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    left: 50%;
+}
+
+#progressbar li:last-child:after {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#progressbar li:first-child:after {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #a1887f;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-col {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+    height: auto;
+    padding: 50px 20px 50px 30px;
+}
+
+.form-col .form-group {
+    margin-right: 10px;
+    width: 70%;
+}
+
+.form-header h5 {
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.show {
+    display: block;
+}
+
+.bookingData .form-control {
+    background-color: transparent;
+    color: #18191e;
+    height: 45px;
+    padding: 0px 20px;
+    border: 2px solid #a1887f;
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: none;
+    border-radius: 20px;
+}
+
+.number-of-people .input-group-field {
+    background-color: transparent;
+    color: #18191e;
+    height: 45px;
+    padding: 0px 20px;
+    border: 2px solid #a1887f;
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: none;
+    border-radius: 20px;
+}
+
+.number-of-people .input-group-button .circle {
+    padding: 0px 16px;
+    text-align: center;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #a1887f;
+    border: none;
+    margin-left: 20px;
+}
+
+.number-of-people .input-group-button:focus .circle {
+    border: none;
+}
+
+.number-of-people .plus-minus-input {
+    margin-left: -10px;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+.booking-button button {
+    margin: 30px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 400;
+    background-color: #b4a099;
+}
+
+.booking-button button:hover {
+    background-color: #a1887f;
+    color: #18191e;
+}
+
+.personal-details .form-group input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #a1887f;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.personal-details .form-group {
+    margin: auto;
+}
+
+.personal-details .form-group input:focus {
+    box-shadow: none;
+}
+
+.summary-details .form-group input,
+.summary-req input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #18191e;
+    font-size: 14px;
+    margin-bottom: 30px;
+    width: 170%;
+}
+
+.summary-special-req .text-wrap {
+    background-color: #ece7e5;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: auto;
+    border-radius: 20px;
+}
+
+input[type="text"]:disabled {
+    background: none;
+}

@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.contact #left {
+    background-image: url("/assets/img/contact.pic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.contact .listcontact {
+    margin-top: 180px;
+    margin-bottom: 180px;
+}
+
+.contact .listcontact h1 {
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+#right {
+    padding: 40px;
+}
+
+#right {
+    padding: 40px;
+}
+
+#right .dinner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#book-a-table-button button {
+    margin-top: 10px;
+    padding: 10px 40px;
+    border: none;
+    background-color: #18191e;
+    color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    #right {
+        text-align: center;
+    }
+    #right hr {
+        object-position: center;
+    }
+}

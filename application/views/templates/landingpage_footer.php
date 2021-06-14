@@ -4,8 +4,8 @@
         <div class="container ">
             <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 ">
                 <div class="col-sm ">
-                    <h3> ABOUT VANA'S CAFE </h3>
-                    <p> At Vana, we wish to offer our personal rendition of Nordic gourmet cuisine with an innovative gastronomic take on traditional cooking methods, fine Nordic produce and the legacy of our shared food heritage. Moreover, we regard it as
+                    <h3> ABOUT BACKYARD CAFE </h3>
+                    <p> At Backyard, we wish to offer our personal rendition of Nordic gourmet cuisine with an innovative gastronomic take on traditional cooking methods, fine Nordic produce and the legacy of our shared food heritage. Moreover, we regard it as
                         a personal challenge to help bring about a revival of Nordic cuisine and let its distinctive flavours and particular regional character brighten up the world.
                     </p>
                 </div>
@@ -67,11 +67,10 @@
             <div class="col-6 col-sm-4 menuBawah ">
                 <ul>
                     <li>
-                        <a href="# "> Home </a>
-                        <a href="# "> Menu </a>
-                        <a href="# "> Book </a>
-                        <a href="# "> Contact </a>
-                        <a href="<?= base_url('auth/login'); ?>"> Admin </a>
+                        <a href="<?= base_url('/'); ?>"> Home </a>
+                        <a href="<?= base_url('auth/menu'); ?>"> Menu </a>
+                        <a href="<?= base_url('auth/booking1'); ?>"> Book </a>
+                        <a href="<?= base_url('auth/contact'); ?>"> Contact </a>
                     </li>
                 </ul>
             </div>

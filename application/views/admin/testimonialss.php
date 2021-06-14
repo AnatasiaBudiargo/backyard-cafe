@@ -10,7 +10,7 @@
           <b> <?php echo $testimonials->email; ?> </b>
           <br>
           <?php echo $testimonials->testi; ?>
-          <a style="background-color: red; color: white; padding: 7px; border-radius: 3px; float: right;" href="<?= base_url('admin/delete/' . $testimonials->id); ?>"> Delete </a>
+          <a style="background-color: red; color: white; padding: 7px; border-radius: 3px; float: right; margin: 2vh;" href="<?= base_url('admin/delete/' . $testimonials->id); ?>"> Delete </a>
         </li>
       <?php endforeach; ?>
   </ul>

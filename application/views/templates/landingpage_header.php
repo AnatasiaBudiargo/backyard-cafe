@@ -11,9 +11,10 @@
 
     <!-- FONT LATO -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300,400,700&display=swap" rel="stylesheet">
     <link href="<?= base_url('assets/'); ?>css/Index_CSS.css" rel="stylesheet">
     <link href="<?= base_url('assets/'); ?>css/menu.css" rel="stylesheet">
+    <link href="<?= base_url('assets/'); ?>css/contact.css" rel="stylesheet">
 
     <title> <?= $title; ?> </title>
 
@@ -22,6 +23,11 @@
     body {
         overflow-x: hidden;
     }
+
+    .contact #left {
+        background-image: url("/assets/img/contact-pic.jpg");
+        background-size: cover;
+}
 
     </style>
 </head>
@@ -40,7 +46,7 @@
                         <a class="nav-link" href="<?= base_url('auth/'); ?>"> HOME <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="<?= base_url('auth/menu'); ?>" id="navbarDropdownMenuLink" role="button"  aria-haspopup="true" aria-expanded="false">
                             OUR MENU
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -54,10 +60,10 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> CONTACT </a>
+                        <a class="nav-link" href="<?= base_url('auth/contact'); ?>"> CONTACT </a>
                     </li>
                     <li class="nav-item book">
-                        <a class="nav-link" href="#"> BOOKING </a>
+                        <a class="nav-link" href="<?= base_url('auth/booking1'); ?>"> BOOKING </a>
                     </li>
                 </ul>
             </div>

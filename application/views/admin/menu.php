@@ -58,49 +58,10 @@
             <p class="card-text"><?= $mn->description ?></p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             <a href="<?= base_url('admin/deleteMenu/' . $mn->id); ?>" style="padding: 5px; background-color:red; color:white;"> Delete </a>
-            <a href="<?= base_url('admin/updateForm/' . $mn->id); ?>">Update </a>
+            <a href="<?= base_url('admin/updateForm/' . $mn->id); ?>" style="padding: 5px; background-color:green; color:white; margin-left: 1vw;" >Update </a>
           </div>
         </div>
       </div>
     </div>
   <?php endforeach; ?>
-</div>
-
-<!-- Modal Update -->
-<div class="modal fade" id="ModalUpdate" tabindex="-1" aria-labelledby="ModalUpdateLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="ModalUpdateLabel">Update Data</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form action="<?= base_url('admin/update_process'); ?>" method="POST">
-          <div class="form-group">
-            <input type="text" name="product_id">
-          </div>
-          <div class="form-group">
-            <label for="name" class="col-form-label">Name:</label>
-            <input type="text" class="form-control" id="name" name="name" autofocus>
-          </div>
-          <div class="form-group">
-            <label for="picture" class="col-form-label">Picture:</label>
-            <input type="text" class="form-control" id="picture" name="picture">
-          </div>
-          <div class="form-group">
-            <label for="description" class="col-form-label">Description:</label>
-            <input type="text" class="form-control" id="description" name="description">
-          </div>
-          <div class="form-group">
-            <label for="price" class="col-form-label">Price:</label>
-            <input type="text" class="form-control" id="price" name="price">
-          </div>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" value="Update" class="btn btn-primary">Update</button>
-        </form>
-      </div>
-    </div>
-  </div>
 </div>

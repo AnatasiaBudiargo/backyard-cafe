@@ -61,3 +61,9 @@
         </div>
 
 </div>
+
+<script>
+$(document).ready(function(){
+    $('.alert-success').fadeIn().delay(1000).fadeOut();
+        });
+</script>

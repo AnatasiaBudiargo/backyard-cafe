@@ -9,7 +9,7 @@
                 <div class="col-lg">
                     <h1 class="display-4"> An <span> elevated </span> culinary <span> experience </span> in Surabaya
                     </h1>
-                    <p> Catering (+62) 123-456-789 / Office (+62) 987-654-321 / Email @VanaSurabaya.com </p>
+                    <p> Catering (+62) 123-456-789 / Office (+62) 987-654-321 / Email @BackSurabaya.com </p>
                     <div class="row row-cols-4 sosmed">
                         <div class="col-auto">
                             <a href="#"> <img src="<?= base_url('assets/img/sosmed/facebook.png'); ?>" alt="facebook"> </a>
@@ -40,7 +40,7 @@
                     <h3> We are located on 04 Tunjungan Street, in Surabaya, Indonesia </h3>
                     <h3> from 11:00am to 03.00pm. </h3>
                     <h6> NOVEMBER 10, 2020 </h6>
-                    <a href="#"> <img src="<?= base_url('assets/img/ICON/twitter-icon.png'); ?>" alt=" "> Follow @VanaCafe </a>
+                    <a href="#"> <img src="<?= base_url('assets/img/ICON/twitter-icon.png'); ?>" alt=" "> Follow @BackyardCafe </a>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
                 <div class="col-lg text-center ">
                     <h1 class="js"> We'll cater any size party </h1>
                     <p class="js"> We will make your dream party come true with various kinds and supported by international <br> standard dishes, venues, decorations and services.</p>
-                    <a href="#" class="js"> BOOK AND EVENT </a>
+                    <a href="<?= base_url('auth/booking1'); ?>" class="js"> BOOK AND EVENT </a>
                 </div>
             </div>
         </div>

@@ -33,6 +33,73 @@ class Auth extends CI_Controller {
 		$this->load->view('templates/landingpage_footer');
 	}
 
+	public function booking1()
+	{
+		$data['title'] = 'Booking Backyard Cafe';
+		$this->load->view('templates/bookingHeader', $data);
+		$this->load->view('auth/booking1', $data);
+	}
+
+	public function booking2()
+	{
+		$data['title'] = 'Booking Backyard Cafe';
+
+		$date = $this->input->post('date');
+        $time = $this->input->post('time');
+        $quantity = $this->input->post('quantity');
+		
+        $this->load->helper('url');
+        $this->load->model('B_booking');
+
+		$data['id'] = $this->B_booking->insert_post($date, $time, $quantity);
+
+		$this->load->view('templates/bookingHeader', $data);
+		$this->load->view('auth/booking2', $data);
+	}
+
+	public function bookingSuccess()
+	{
+		$data['title'] = 'Booking Success Backyard Cafe';
+		$this->load->view('templates/landingpage_header', $data);
+		$this->load->view('auth/bookingSuccess', $data);
+		$this->load->view('templates/landingpage_footer');
+	}
+
+	public function update_processBooking()
+    {
+        $id = $this->input->post('product_id');
+        $FirstName = $this->input->post('FirstName');
+        $LastName = $this->input->post('LastName');
+        $phone = $this->input->post('mobile');
+        $email = $this->input->post('email');
+        $address = $this->input->post('address');
+        $notes = $this->input->post('notes');
+
+        $this->load->helper('url');
+        $this->load->model('B_booking');
+
+        $this->B_booking->update_post($id, $FirstName, $LastName, $phone, $email, $address, $notes);
+        redirect('auth/booking3', 'refresh');
+    }
+
+	public function booking3()
+	{
+		$this->load->helper('url');
+        $this->load->model('B_booking');
+		$booking = $this->B_booking->getById();
+		$data['bookings'] = $booking;
+		$this->load->view('templates/bookingHeader', $data);
+		$this->load->view('auth/booking3', $data);
+	}	
+
+	public function contact()
+	{
+		$data['title'] = 'Contact Backyard Cafe';
+		$this->load->view('templates/landingpage_header', $data);
+		$this->load->view('auth/contact', $data);
+		$this->load->view('templates/landingpage_footer');
+	}
+
 	public function login()
 	{
 		$this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email');

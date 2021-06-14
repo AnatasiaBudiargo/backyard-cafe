@@ -29,9 +29,7 @@ class M_menu extends CI_Model
         $this->load->database();
         $this->db->query("UPDATE menu SET name = '$name', 
         description = '$description', picture = '$picture', price = '$price' 
-        WHERE id = $id");    
-        // dd($id);
-        // var_dump($id);
+        WHERE id = $id");
 
     }
 }

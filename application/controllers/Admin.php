@@ -56,6 +56,22 @@ class Admin extends CI_Controller
         $this->load->view('templates/adminFooter');
     }
 
+    public function booking()
+    {
+        $data['title'] = 'Booking Backyard';
+        $data['admin'] = $this->db->get_where('admin', ['email' => $this->session->userdata('email')])->row_array();
+        $this->load->model('B_booking');
+
+        $bookings = $this->B_booking->SemuaData();
+        $data['bookings'] = $bookings;
+
+        $this->load->view('templates/adminHeader', $data);
+        $this->load->view('templates/adminSidebar', $data);
+        $this->load->view('templates/adminTopbar', $data);
+        $this->load->view('admin/booking', $data);
+        $this->load->view('templates/adminFooter');
+    }
+
     public function create()
     {
         $this->load->helper('url');
@@ -123,7 +139,12 @@ class Admin extends CI_Controller
     {
         $this->load->helper('url');
         $data['product_id'] = $id;
+
+        $this->load->view('templates/adminHeader');
+        $this->load->view('templates/adminSidebar');
+        // $this->load->view('templates/adminTopbar');
         $this->load->view('admin/menu_update', $data);
+        // $this->load->view('templates/adminFooter');
     }
 
     public function update_process()
@@ -138,6 +159,7 @@ class Admin extends CI_Controller
         $this->load->model('M_menu');
 
         $this->M_menu->update_post($id, $name, $description, $picture, $price);
+        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Menu has been update! </div>');
         redirect('admin/menu', 'refresh');
     }
 }

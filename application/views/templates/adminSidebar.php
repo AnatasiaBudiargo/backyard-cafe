@@ -72,6 +72,12 @@
                     <i class="fas fa-fw fa-comments"></i>
                     <span>Testimonials</span></a>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="<?= base_url('admin/booking'); ?>">
+                    <i class="fas fa-fw fa-bookmark"></i>
+                    <span>Booking</span></a>
+            </li>
            
             <!-- Divider -->
             <hr class="sidebar-divider">
